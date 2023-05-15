@@ -34,6 +34,7 @@ class Book:
 book1 = Book("Natalie Zina Walschots", "Hench")
 print(book1.get_author())
 print(Book.get_author(book1))
+
 # print(Book.get_author(all))
 # print(Book.get_title(all))
 # print(Book.get_title.get_author())
