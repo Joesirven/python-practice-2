@@ -10,3 +10,10 @@
 
 def minimum_value(value1, value2):
     pass
+# Write your code here
+    min_value= min(value1, value2)
+    return min_value
+
+print(minimum_value(6, 2))
+# iterate through values in list
+# use min function to return minimum value

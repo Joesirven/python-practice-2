@@ -20,5 +20,20 @@
 # at the last one you just wrote unless you really must.
 
 
+class Book:
+    def __init__(self, author, title):
+        self.author = author
+        self.title = title
 
+    def get_author(self):
+        return f"Author: {self.author}"
 
+    def get_title(self):
+        return f"Title: {self.title}"
+
+book1 = Book("Natalie Zina Walschots", "Hench")
+print(book1.get_author())
+print(Book.get_author(book1))
+# print(Book.get_author(all))
+# print(Book.get_title(all))
+# print(Book.get_title.get_author())
