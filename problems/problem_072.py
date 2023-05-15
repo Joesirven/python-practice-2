@@ -28,3 +28,24 @@
 # at the last one you just wrote unless you really must.
 
 
+class Person:
+    def __init__(self, name, hated_food, loved_food):
+        self.name = name
+        self.hated_food = hated_food
+        self.loved_food = loved_food
+
+    def taste(self, name):
+        if name in self.hated_food:
+            return False
+        elif name in self.loved_food:
+            return True
+        else:
+            return None
+
+person = Person("Malik",
+                   ["cottage cheese", "sauerkraut"],
+                   ["pizza", "schnitzel"])
+
+print(person.taste("lasagna"))     # Prints None, not in either list
+print(person.taste("sauerkraut"))  # Prints False, in the hated list
+print(person.taste("pizza"))       # Prints True, in the loved list
