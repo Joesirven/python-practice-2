@@ -11,4 +11,15 @@
 # problem to get a good feel for how to solve it.
 
 def can_make_pasta(ingredients):
-    pass
+# if ingredients contain flour eggs and oil return true
+    if "flour" in ingredients and "eggs" in ingredients and "oil" in ingredients:
+        return True
+    else:
+        return False
+#else return false
+
+ingredients = ["flour", "eggs", "oil"]
+print(can_make_pasta(ingredients))
+
+ingredients = ["flour", "eggs", "salt"]
+print(can_make_pasta(ingredients))
