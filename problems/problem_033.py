@@ -17,14 +17,13 @@
 
 def sum_of_first_n_even_numbers(n):
 #for i range(0, n + 1), if % 2 == 0 then append to list
-    even_num = []
+    even_num = 0
     if n < 0:
         return None
-    else:
-        for i in range(0, 2*(n + 1)):
-            if i % 2 == 0:
-                even_num.append(i)
-        return sum(even_num)
+    for i in range(2*(n + 1)):
+        if i % 2 == 0:
+            even_num += i
+    return even_num
 
 # return sum of list
 
