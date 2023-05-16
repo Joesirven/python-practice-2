@@ -22,4 +22,20 @@
 
 
 def count_letters_and_digits(s):
-    pass
+#letters list
+    letters = []
+# Numbsers list
+    nums = []
+#for loop
+    for i in s:
+        if i.isalpha():
+            letters.append(i)
+        if i.isdigit():
+            nums.append(i)
+
+    return len(letters), len(nums)
+#if it is a letter add 1 to letters
+#if there is a
+print(count_letters_and_digits("a1"))
+print(count_letters_and_digits("1"))
+print(count_letters_and_digits("a"))
