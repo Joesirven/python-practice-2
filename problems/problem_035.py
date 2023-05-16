@@ -24,4 +24,17 @@
 # at the last one you just wrote unless you really must.
 
 def count_letters_and_digits(s):
-    pass
+    letters = []
+    nums = []
+
+    for i in s:
+        if i.isdigit():
+            nums.append(i)
+        if i.isalpha():
+            letters.append(i)
+
+    return len(letters), len(nums)
+
+print(count_letters_and_digits("A11"))
+print(count_letters_and_digits("a"))
+print(count_letters_and_digits(""))
