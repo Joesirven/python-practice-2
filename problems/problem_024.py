@@ -10,7 +10,10 @@
 def calculate_average(values):
     # pass
 # use sum(values)/len(values) to find average
-    return sum(values)/len(values)
+    if values:
+        return sum(values)/len(values)
+    else:
+        return None
 
-print(calculate_average([10, 12, 13, 14,]))
-print(calculate_average())
+print(int(calculate_average([10, 12, 13, 14,])))
+print(calculate_average([]))
