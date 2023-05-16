@@ -24,4 +24,11 @@
 #     result: "   19"
 
 def pad_left(number, length, pad):
-    pass
+    # pass
+# pad_length = measure len of number, and subtract that from the length
+    pad_length = (length - len(str(number)))
+# padding * pad_length + str(num)
+    return (pad*pad_length) + str(number)
+
+print(pad_left(19, 5, " "))
+print(pad_left(1000, 12, "0"))
