@@ -8,4 +8,9 @@
 # Pseudocode is available for you
 
 def calculate_average(values):
-    pass
+    # pass
+# use sum(values)/len(values) to find average
+    return sum(values)/len(values)
+
+print(calculate_average([10, 12, 13, 14,]))
+print(calculate_average())

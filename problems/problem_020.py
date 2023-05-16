@@ -3,4 +3,8 @@
 # to 50% of the number of people in the members list.
 
 def has_quorum(attendees_list, members_list):
-    pass
+    # pass
+    return attendees_list >= (members_list / 2)
+
+print(has_quorum(30, 50))
+print(has_quorum(8, 27))
