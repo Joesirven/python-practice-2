@@ -18,4 +18,14 @@
 # Remember that a dictionary has the ".get" method on it.
 
 def translate(key_list, dictionary):
-    pass
+    result = []
+
+#for loop that takes key from keylist and calls value from dictionary
+    for key in key_list:
+# adds results to a new list
+        result.append(dictionary.get(key))
+    return result
+
+print(translate(["name", "age"], {"name": "Noor", "age": 29}))
+print(translate(["eye color", "age"], {"name": "Noor", "age": 29}))
+print(translate(["age", "age", "age"], {"name": "Noor", "age": 29}))
